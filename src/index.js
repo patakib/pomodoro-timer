@@ -1,8 +1,29 @@
+import { ReactComponent } from '*.svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+    
+  }
+  render() {
+    return (
+      <div>
+        <h3>Pomodoro Timer</h3>
+        <div>
+          
+        </div>
+      </div>
+    )
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
