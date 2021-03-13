@@ -13,12 +13,18 @@ class App extends React.Component {
     }
     
   }
+
   render() {
     return (
       <div>
         <h3>Pomodoro Timer</h3>
-        <div>
-          
+        <div id="timer">
+          <div id="timer-label">Session</div>
+          <div id="time-left"></div>
+          <div id="session-length"></div>
+          <div id="break-length"></div>
+          <div id="start_stop"></div>
+          <div id="reset"></div>
         </div>
       </div>
     )
