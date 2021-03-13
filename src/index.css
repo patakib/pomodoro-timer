@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #023047;
+  color:#edf6f9;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+#timer-label {
+  grid-area: timer-label;
+}
+#time-left {
+  background-color: black;
+  width: 100px;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  text-align: center;
+  grid-area: time-left;
+  font-size: 1.4em;
+}
+#session-label {
+  grid-area: session-label;
+}
+#break-label {
+  grid-area: break-label;
+}
+#session-length {
+  grid-area: session-length;
+}
+#break-length {
+  grid-area: break-length;
+}
+#session-increment {
+  grid-area: session-increment;
+}
+#session-decrement {
+  grid-area: session-decrement;
+}
+#break-increment {
+  grid-area: break-increment;
+}
+#break-decrement {
+  grid-area: break-decrement;
+}
+#start_stop {
+  grid-area: start_stop;
+}
+#reset {
+  grid-area: reset;
+}
+
+#timer {
+  margin: auto;
+  width: 300px;
+  height: 350px;
+  padding: 2px 2px 2px 2px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 150px 150px;
+  row-gap: 8px;
+  grid-template-areas: 
+    "timer-label timer-label"
+    "time-left time-left"
+    "session-label break-label"
+    "session-length break-length"
+    "session-increment break-increment"
+    "session-decrement break-decrement"
+    "start_stop start_stop"
+    "reset reset";
+  border: #ffb703 3px solid;
+  border-radius: 10px;
+}
+button {
+  background-color: #ffb703;
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+button:hover {
+  background-color: black;
+  color: #ffb703;
+  cursor: pointer;
+}
+#session-increment, #session-decrement, #break-increment, #break-decrement {
+  width: 50px;
+  font-size: 20px;
 }
